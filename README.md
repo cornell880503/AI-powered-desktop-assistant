@@ -2,8 +2,6 @@
 
 An agentic AI desktop assistant built with Electron + React + Python, powered by Google Gemini. This repository serves as both a working prototype and a PM-ready product strategy demonstration.
 
-Built as a portfolio project for **Product Manager, Google Partner Innovation** — demonstrating the ability to conceptualize, prototype, and launch AI products that showcase Google's AI capabilities end-to-end.
-
 The entire prototype was designed, scoped, and built using vibe coding (Claude Code + GitHub Copilot) — no prior Electron or React experience required.
 
 ---
@@ -12,22 +10,7 @@ The entire prototype was designed, scoped, and built using vibe coding (Claude C
 
 Knowledge workers spend hours switching between Gmail, Drive, Docs, Sheets, and Calendar. Each context switch is lost momentum. Gemini Command Center eliminates that friction by embedding a single agentic interface into the OS that can understand natural language, retrieve context from local files and open documents, and execute real actions — draft, save, send, schedule — without leaving your workflow.
 
-This is a demonstration of what becomes possible when Google's latest AI models are linked directly to practical, workflow-level applications that drive value for Google's enterprise partners.
-
----
-
-## Why This Project
-
-This demo directly targets the core responsibilities of the Google Partner Innovation PM role:
-
-| JD Requirement | How this demo addresses it |
-|---|---|
-| Conceptualize and prototype groundbreaking AI product opportunities | Full working prototype built from scratch: routing, execution, RAG, undo, multi-action chaining |
-| Transform research breakthroughs into user-friendly features | Two-stage Gemini routing pipeline + self-healing code execution — research-grade concepts shipped as UX |
-| Own the full product lifecycle, ideation → launch → iteration | This repo covers scoping, prototyping, architecture, and the full feature set with documented product strategy |
-| Partner with Product Alliance Managers on go-to-market narratives | README + docs/ folder structured as a go-to-market brief for Google enterprise partners |
-| Agentic AI with tool-calling, memory management, and evaluation pipelines | Tool-calling (10 action types), conversation memory (ChromaDB + disk), pipeline tracing in demo mode |
-| Vibe coding via mainstream agentic tools, ability to analyze source code | Entire codebase built via Claude Code; author can walk through every line |
+This is a demonstration of what becomes possible when Gemini models are linked directly to practical, workflow-level actions on the desktop.
 
 ---
 
@@ -110,8 +93,8 @@ This demo directly targets the core responsibilities of the Google Partner Innov
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/cornell880503-bot/microsoft-copilot-demo
-cd microsoft-copilot-demo
+git clone https://github.com/cornell880503/AI-powered-desktop-assistant
+cd AI-powered-desktop-assistant
 npm install
 ```
 
@@ -207,7 +190,7 @@ npm run dev
 ## Project Structure
 
 ```
-gemini-command-center/
+AI-powered-desktop-assistant/
 ├── docs/                      # PM strategy, metrics, experiment plan, privacy design
 ├── electron/                  # Electron main process
 ├── server/
