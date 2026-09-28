@@ -1783,7 +1783,7 @@ async def run_agent_stream(user_input: str, history: list[dict] | None = None) -
                     "- Output ONLY executable Python code, no markdown, no explanation"
                 ),
             )
-            code = code_(resp.text or "").strip()
+            code = (code_resp.text or "").strip()
             code = re.sub(r"^```python\s*", "", code)
             code = re.sub(r"\s*```$", "", code).strip()
 
@@ -1801,7 +1801,7 @@ async def run_agent_stream(user_input: str, history: list[dict] | None = None) -
                         "Return ONLY executable Python code."
                     ),
                 )
-                code = regen_(resp.text or "").strip()
+                code = (regen_resp.text or "").strip()
                 code = re.sub(r"^```python\s*", "", code)
                 code = re.sub(r"\s*```$", "", code).strip()
 
@@ -1839,7 +1839,7 @@ async def run_agent_stream(user_input: str, history: list[dict] | None = None) -
                             "Return ONLY executable Python code, no markdown, no explanation."
                         ),
                     )
-                    fixed = fix_(resp.text or "").strip()
+                    fixed = (fix_resp.text or "").strip()
                     fixed = re.sub(r"^```python\s*", "", fixed)
                     fixed = re.sub(r"\s*```$", "", fixed).strip()
                     stdout, returncode, stderr = _run_code(fixed)
@@ -1862,7 +1862,7 @@ async def run_agent_stream(user_input: str, history: list[dict] | None = None) -
                             "Return ONLY executable Python code."
                         ),
                     )
-                    regenerated = regen_output_(resp.text or "").strip()
+                    regenerated = (regen_output_resp.text or "").strip()
                     regenerated = re.sub(r"^```python\s*", "", regenerated)
                     regenerated = re.sub(r"\s*```$", "", regenerated).strip()
                     stdout, returncode, stderr = _run_code(regenerated)
